@@ -3,22 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
+   
+    <div class="container">
+
+   
+        <h1>TIME AND WEATHER</h1>
+            
+        <input type="text" id="zip"></input>
+        <button id="getForecast">Enter a US Zip Code</button>
+
+        <h3 class="heading">The local time is:</h3>
+        <p class="location"></p>
+
+        <h3 class="heading">Your forecast for the day in:</h3>
+
+        <p class="showForecast"></p>
+        <span id="error"></span>
+
+
     
-<input type="text" value="">
-<h3 class="currentTime"></h3>
-
-
+    </div>
 
 
     <script
     src="https://code.jquery.com/jquery-3.5.0.min.js"
     integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
     crossorigin="anonymous"></script>
-    <!-- <script src="moment.js"></script> -->
-    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/open-weather/2.0.0/openweather.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+   
+    <script src="weather.js"></script>
 
 </body>
 </html>

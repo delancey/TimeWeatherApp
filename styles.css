@@ -1,0 +1,64 @@
+* {
+   box-sizing: border-box; 
+}
+
+body {
+    background-color: #e2fefe;
+    background: url(images/sky.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center; 
+}
+
+.heading{
+    display:none;
+}
+
+h1{    
+    margin-top: 100px;
+    color: #b05f6d;
+    display: block;
+    font-size: 48px;
+    font-weight:700;
+}
+input{
+  width: 200px;
+  height: 30px;
+  margin-bottom: 10px; 
+  border-radius: 5px;
+  font-size: 18px;
+  color: gray;
+}
+
+input[type="text"]{
+    padding-left: 10px;
+    color: #eb6b56;
+}
+
+button {
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+    background-color: #b05f6d;
+    color: white;
+    font-size: 16px;
+}
+
+h3{
+    font-size: 30px;
+    color: #b05f6d;
+}
+p {
+  color: #47b39d;
+  font-size: 24px;
+}
+
+.showForecast{
+    text-align:center;
+}

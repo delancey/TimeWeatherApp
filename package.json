@@ -4,12 +4,25 @@
   "description": "Node, jQuery, Ajax Project",
   "main": "app.js",
   "scripts": {
-    "test": "test"
+    "test": "node test.js",
+    "start": "node app.js"
   },
   "author": "Dana",
   "license": "ISC",
   "dependencies": {
     "moment": "^2.24.0",
-    "moment-timezone": "^0.5.28"
-  }
+    "openweather-apis": "^4.2.0",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "watchify": "^3.11.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/delancey/TimeWeatherApp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/delancey/TimeWeatherApp/issues"
+  },
+  "homepage": "https://github.com/delancey/TimeWeatherApp#readme"
 }
