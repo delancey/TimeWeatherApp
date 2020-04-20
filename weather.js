@@ -55,4 +55,3 @@ $(document).ready(function() {
     }) //end of get forecast
 
 })  //end of document ready function
-

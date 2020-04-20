@@ -60,6 +60,9 @@ p {
   font-size: 24px;
 }
 
+img{
+    margin-top: -20px;
+   }
 .showForecast{
     text-align:center;
-}
+    }
