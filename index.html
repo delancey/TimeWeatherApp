@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Time and Weather App</title>
 </head>
 <body>
    
@@ -17,10 +17,10 @@
         <input type="text" id="zip"></input>
         <button id="getForecast">Enter a US Zip Code</button>
 
-        <h3 class="heading">The local time is:</h3>
+        <h3 class="heading">The local date and time is:</h3>
         <p class="location"></p>
 
-        <h3 class="heading">Your forecast for the day in:</h3>
+        <h3 class="heading">Your current temperature in:</h3>
 
         <p class="showForecast"></p>
         <span id="error"></span>
@@ -36,6 +36,8 @@
     crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/open-weather/2.0.0/openweather.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.28/moment-timezone.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.28/moment-timezone-utils.js"></script> -->
    
     <script src="weather.js"></script>
 

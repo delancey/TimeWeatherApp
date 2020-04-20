@@ -5,7 +5,7 @@ $(document).ready(function() {
        
         var zipCode = $('#zip').val();
         var key = '9ac5bc3be4129c77500db64422716a04';
-        let ty;
+        
         $.ajax({
             url: 'http://api.openweathermap.org/data/2.5/weather',
             dataType: 'json',
@@ -13,25 +13,19 @@ $(document).ready(function() {
             data: {zip:zipCode, appid: key, units: 'imperial'},
             success: function(data){
                 $(".heading").show();
-                var wf = '';
+                var outlook = '';
+                var owi =`http://openweathermap.org/img/wn/`;
                 $.each(data.weather, function(index, val) {
-                    ty= data.timezone;
-                    wf += '<p><b>' + data.name + "</b></p>" + parseInt(data.main.temp) + '&deg;F ' + ' | ' + val.main + ", " + val.description 
+                  
+                    outlook += '<p><b>' + data.name + '</b><img src=' +owi + val.icon +'@2x.png></p>' + parseInt(data.main.temp) + '&deg;F ' + ' | ' + val.main + ', ' + val.description 
                 });
-                $(".showForecast").html(wf);
+                $(".showForecast").html(outlook);
+
                 let zone;
-                let now = moment().unix();
-                
+                let now = moment().unix();                
                 let difference = data.timezone; //utc offset-timezone
-                
-                
-
-
-
                 let offset = (difference -(-14400));//offset - local time
-                
                 let timeAndOff = now + offset;
-                
                 let localZone = moment.unix(timeAndOff).format('llll');
                 
                 if (difference == -14400){
